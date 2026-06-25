@@ -173,7 +173,7 @@ const ELEMENT_MSGS: Record<string, { title: string; body: string }[]> = {
   "nav:home":      [{ title: "Home",     body: "Jump to Praveen's intro — role, bio, and all contact links." }],
   "nav:skills":    [{ title: "Arsenal",  body: "Jump to the skills section — SIEM, security tools, frameworks, networking, and scripting." }],
   "nav:story":     [{ title: "Story",    body: "Praveen's experience — internships at Hackup Technology and IIT Kanpur, plus SOC lab work since 2023." }],
-  "nav:portfolio": [{ title: "Projects", body: "Five security tools built from scratch — hover any card for details." }],
+  "nav:portfolio": [{ title: "Projects", body: "all security tools built from scratch — hover any card for details." }],
   "nav:contact":   [{ title: "Contact",  body: "Ways to reach Praveen — email, LinkedIn, GitHub, phone. Actively open to work." }],
 
   /* projects */
@@ -201,7 +201,7 @@ const ELEMENT_MSGS: Record<string, { title: string; body: string }[]> = {
   /* buttons */
   "btn:cv":       [{ title: "Download CV",    body: "One-page resume — projects, internships, certifications, and tools. Grab it for your hiring manager." }],
   "btn:linkedin": [{ title: "LinkedIn",       body: "Connect on LinkedIn — professional conversation, endorsements, or to follow Praveen's security activity." }],
-  "btn:github":   [{ title: "GitHub — praxezz", body: "All five tools are open-source here. Great way to evaluate code quality and problem-solving depth." }],
+  "btn:github":   [{ title: "GitHub — praxezz", body: "All tools are open-source here. Great way to evaluate code quality and problem-solving depth." }],
   "btn:email":    [{ title: "Email",          body: "https.praveen.go@gmail.com — best for opportunities or collaboration. Replies within 24 h." }],
   "btn:phone":    [{ title: "Phone / WhatsApp", body: "+91 82201 89476 — call or WhatsApp for quick intros or scheduling." }],
   "form:name":    [{ title: "Name",           body: "Use your real name or company name so Praveen knows who is reaching out." }],
@@ -250,11 +250,11 @@ const ELEMENT_MSGS: Record<string, { title: string; body: string }[]> = {
   "domain:Penetration Testing": [{ title: "Penetration Testing Domain", body: "Burp Suite, Metasploit, Nmap, OWASP Top 10 — offensive toolkit used in both internships." }],
   "domain:Malware Analysis":    [{ title: "Malware Analysis Domain",    body: "YARA rules, PE analysis, ssdeep hashing, IOC extraction, forensic logging — used in Praxion." }],
   "domain:Network Security":    [{ title: "Network Security Domain",    body: "Wireshark/PCAP, Scapy, MITM analysis, protocol forensics — Pherion was built on this foundation." }],
-  "domain:Programming":         [{ title: "Programming Domain",         body: "Python primary, Bash + PowerShell secondary. All five tools are Python. SQLite for forensic storage." }],
+  "domain:Programming":         [{ title: "Programming Domain",         body: "Python primary, Bash + PowerShell secondary. All tools are Python. SQLite for forensic storage." }],
   "domain:Frameworks":          [{ title: "Frameworks Domain",          body: "MITRE ATT&CK, Cyber Kill Chain, NIST CSF, CVE research. Framework thinking guides every detection rule." }],
 
   /* key metrics */
-  "metric:Years Learning":       [{ title: "1+ Year Focused",          body: "One year deep-focused on cybersecurity — daily labs, two internships, five tools built, 50+ threats investigated." }],
+  "metric:Years Learning":       [{ title: "1+ Year Focused",          body: "One year deep-focused on cybersecurity — daily labs, two internships, building tools , 50+ threats investigated." }],
   "metric:Security Projects":    [{ title: "8+ Security Projects",     body: "8 security tools built from scratch — IDS, USB scanner, steganography, password auditor, SIEM rule generator, and more." }],
   "metric:Hands-on Labs":        [{ title: "25+ Hands-on Labs",        body: "25+ documented lab exercises — every one includes a writeup with methodology, findings, and remediation." }],
   "metric:Threats Investigated": [{ title: "50+ Threats Investigated", body: "50+ real and simulated threats triaged, correlated, and documented across internships and home lab work." }],

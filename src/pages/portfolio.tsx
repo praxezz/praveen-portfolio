@@ -1723,41 +1723,44 @@ export default function Portfolio() {
                 )}
               </motion.div>
 
-              {/* contact info */}
-              <motion.div initial={{ opacity:0, x:20 }} whileInView={{ opacity:1, x:0 }} viewport={{ once:true }} className="space-y-6 pt-2">
-                <div>
-                  <div className="font-mono text-xs tracking-widest text-white/55 mb-4 ">// DIRECT_CHANNELS </div>
-                  <div className="space-y-3">
-                    {[
-                      { icon:<Mail className="w-4 h-4" />,     key:"btn:email",    label:"Email",href:"mailto:https.praveen.go@gmail.com" },
-                      { icon:<Phone className="w-4 h-4" />,    key:"btn:phone",    label:"Phone",href:"tel:+918220189476" },
-                      { icon:<Linkedin className="w-4 h-4" />, key:"btn:linkedin", label:"LinkedIn",href:"https://linkedin.com/in/viewpraveenk/" },
-                      { icon:<Github className="w-4 h-4" />,   key:"btn:github",   label:"GitHub",href:"https://github.com/praxezz" },
-                      { icon:<Download className="w-4 h-4" />, key:"btn:cv",       label:"Download CV ", href:"/resume.pdf" },
-
-                    ].map(({ icon, key, label,href }) => (
-                      <a key={key} href={href} target="_blank" rel="noreferrer" data-pako={key}
-                        className="relative flex  w-full max-w-[230px] items-center gap-5 overflow-hidden px-4 py-3 text-white/58 hover:text-white active:scale-[0.98] transition-all duration-200 group italic"
-                        style={{
-                          border:"2px solid rgba(255,255,255,0.18)",
-                          clipPath:CONTACT_CUT,
-                          background:"linear-gradient(135deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.025) 42%, transparent 100%)",
-                          boxShadow:"0 0 0 1px rgba(255,255,255,0.04) inset",
-                          WebkitTapHighlightColor:"transparent",
-                        }}
-                        onMouseEnter={e => { e.currentTarget.style.borderColor="rgba(255,255,255,0.48)"; e.currentTarget.style.background="linear-gradient(135deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.055) 46%, rgba(255,255,255,0.02) 100%)"; e.currentTarget.style.boxShadow="0 0 0 1px rgba(255,255,255,0.16) inset, 0 0 24px rgba(255,255,255,0.08)"; }}
-                        onMouseLeave={e => { e.currentTarget.style.borderColor="rgba(255,255,255,0.18)"; e.currentTarget.style.background="linear-gradient(135deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.025) 42%, transparent 100%)"; e.currentTarget.style.boxShadow="0 0 0 1px rgba(255,255,255,0.04) inset"; }}
-                      >
-                        <span className="absolute left-0 top-0 h-5 w-5 bg-white/18 pointer-events-none" style={{ clipPath:"polygon(0 0, 100% 0, 0 100%)" }} />
-                        <span className="absolute right-0 bottom-0 h-6 w-6 border-r-2 border-b-2 border-white/30 pointer-events-none" />
-                        <span className="relative flex h-8 w-8 flex-shrink-0 items-center justify-center text-white transition-transform duration-200 group-hover:scale-110 group-active:rotate-[-8deg]" style={{ background:"rgba(255,255,255,0.07)", border:"1px solid rgba(255,255,255,0.2)", clipPath:ACTION_CUT }}>{icon}</span>
-                        <div className="relative min-w-0">
-                          <div className="font-mono text-[13px] text-white/48 tracking-widest uppercase mb-0.5">{label}</div>                        </div>
-                        <ArrowUpRight className="relative w-3.5 h-3.5 ml-auto flex-shrink-0 opacity-45 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
-                      </a>
-                    ))}
-                  </div>
-                  </div>
+             {/* contact info */}
+<motion.div initial={{ opacity:0, x:20 }} whileInView={{ opacity:1, x:0 }} viewport={{ once:true }} className="space-y-6 pt-2">
+  <div>
+    <div className="font-mono text-xs tracking-widest text-white/55 mb-4 ">// DIRECT_CHANNELS </div>
+    <div className="space-y-3">
+      {[
+        { icon:<Mail className="w-4 h-4" />,     key:"btn:email",    label:"Email",       value:"https.praveen.go@gmail.com",   href:"mailto:https.praveen.go@gmail.com",     color:"#10b981" },
+        { icon:<Phone className="w-4 h-4" />,    key:"btn:phone",    label:"Phone",       value:"+91 82201 89476",              href:"tel:+918220189476",                     color:"#ef4444" },
+        { icon:<Linkedin className="w-4 h-4" />, key:"btn:linkedin", label:"LinkedIn",    value:"linkedin.com/in/viewpraveenk", href:"https://linkedin.com/in/viewpraveenk/", color:"#0ea5e9" },
+        { icon:<Github className="w-4 h-4" />,   key:"btn:github",   label:"GitHub",      value:"github.com/praxezz",           href:"https://github.com/praxezz",            color:"#22c55e" },
+        { icon:<Download className="w-4 h-4" />, key:"btn:cv",       label:"Download CV", value:"praveen's Resume",             href:"/resume.pdf",                           color:"#a855f7" },
+      ].map(({ icon, key, value, label, href, color }) => (
+        <a key={key} href={href} target="_blank" rel="noreferrer" data-pako={key}
+          className="relative flex w-full max-w-[360px] items-center gap-5 overflow-hidden px-4 py-3 text-white/58 hover:text-white active:scale-[0.98] transition-all duration-200 group italic"
+          style={{
+            border:"2px solid rgba(255,255,255,0.18)",
+            clipPath:CONTACT_CUT,
+            background:"linear-gradient(135deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.025) 42%, transparent 100%)",
+            boxShadow:"0 0 0 1px rgba(255,255,255,0.04) inset",
+            WebkitTapHighlightColor:"transparent",
+          }}
+          onMouseEnter={e => { e.currentTarget.style.borderColor="rgba(255,255,255,0.48)"; e.currentTarget.style.background="linear-gradient(135deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.055) 46%, rgba(255,255,255,0.02) 100%)"; e.currentTarget.style.boxShadow="0 0 0 1px rgba(255,255,255,0.16) inset, 0 0 24px rgba(255,255,255,0.08)"; }}
+          onMouseLeave={e => { e.currentTarget.style.borderColor="rgba(255,255,255,0.18)"; e.currentTarget.style.background="linear-gradient(135deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.025) 42%, transparent 100%)"; e.currentTarget.style.boxShadow="0 0 0 1px rgba(255,255,255,0.04) inset"; }}
+        >
+          <span className="absolute left-0 top-0 h-5 w-5 bg-white/18 pointer-events-none" style={{ clipPath:"polygon(0 0, 100% 0, 0 100%)" }} />
+          <span className="absolute right-0 bottom-0 h-6 w-6 border-r-2 border-b-2 border-white/30 pointer-events-none" />
+          <span className="relative flex h-8 w-8 flex-shrink-0 items-center justify-center transition-transform duration-200 group-hover:scale-110 group-active:rotate-[-8deg]"
+            style={{ background:"rgba(255,255,255,0.07)", border:`1px solid ${color}40`, clipPath:ACTION_CUT, color }}
+          >{icon}</span>
+          <div className="relative min-w-0">
+            <div className="font-mono text-[12px] text-white/48 tracking-widest uppercase mb-0.5">{label}</div>
+            <div className="font-mono text-xs break-words" style={{ color }}>{value}</div>
+          </div>
+          <ArrowUpRight className="relative w-3.5 h-3.5 ml-auto flex-shrink-0 opacity-45 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+        </a>
+      ))}
+    </div>
+  </div>
 
                 <div className="pt-4" style={{ borderTop:"1px solid rgba(255,255,255,0.07)" }}>
                   <div className="font-mono text-xs tracking-widest text-white/55 mb-3">// STATUS</div>
