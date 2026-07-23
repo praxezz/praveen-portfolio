@@ -183,7 +183,7 @@ const ELEMENT_MSGS: Record<string, { title: string; body: string }[]> = {
   ],
   "project:Praxion": [
     { title: "Praxion — USB Malware Scanner", body: "YARA rules + PE file analysis auto-identify IOCs on USB drives. Forensic logging + secure quarantine." },
-    { title: "Praxion — USB Malware Scanner", body: "VirusTotal API cross-validation with ssdeep fuzzy hashing — catches even slightly mutated malware variants." },
+    { title: "Praxion — USB Malware Scanner", body: "VirusTotal API cross-validation with ppdeep fuzzy hashing — catches even slightly mutated malware variants." },
   ],
   "project:Phantom": [
     { title: "Phantom — Steganography & Crypto", body: "AES-256 encrypted data hidden inside images via LSB steganography. Multi-layer salt/IV protection." },
@@ -248,7 +248,7 @@ const ELEMENT_MSGS: Record<string, { title: string; body: string }[]> = {
   /* skill domains */
   "domain:SOC & SIEM":          [{ title: "SOC & SIEM Domain",         body: "Splunk Enterprise, log analysis, alert triage, incident response, and SIEM rule writing — core daily SOC work." }],
   "domain:Penetration Testing": [{ title: "Penetration Testing Domain", body: "Burp Suite, Metasploit, Nmap, OWASP Top 10 — offensive toolkit used in both internships." }],
-  "domain:Malware Analysis":    [{ title: "Malware Analysis Domain",    body: "YARA rules, PE analysis, ssdeep hashing, IOC extraction, forensic logging — used in Praxion." }],
+  "domain:Malware Analysis":    [{ title: "Malware Analysis Domain",    body: "YARA rules, PE analysis, ppdeep fuzzy hashing, IOC extraction, forensic logging — used in Praxion." }],
   "domain:Network Security":    [{ title: "Network Security Domain",    body: "Wireshark/PCAP, Scapy, MITM analysis, protocol forensics — Pherion was built on this foundation." }],
   "domain:Programming":         [{ title: "Programming Domain",         body: "Python primary, Bash + PowerShell secondary. All tools are Python. SQLite for forensic storage." }],
   "domain:Frameworks":          [{ title: "Frameworks Domain",          body: "MITRE ATT&CK, Cyber Kill Chain, NIST CSF, CVE research. Framework thinking guides every detection rule." }],

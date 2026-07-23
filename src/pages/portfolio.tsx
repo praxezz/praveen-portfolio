@@ -890,7 +890,7 @@ function ProjectCard({ title, subtitle, stack, details, treeFlow, color, index, 
 
             {/* Right Column (Only on Desktop/Tablet) */}
             {!isMobile && (
-              <div className="relative flex flex-col h-full z-10 w-[52%] pl-6 overflow-y-auto pr-1 pb-16">
+              <div className="relative flex flex-col h-full z-10 w-[52%] pl-6 overflow-hidden pb-16">
                 {treeFlow && <BranchTreeFlow tree={treeFlow} color={accentColor} />}
               </div>
             )}
